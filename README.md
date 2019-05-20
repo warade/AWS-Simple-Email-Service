@@ -17,16 +17,16 @@ After verifying emails you need to configure few things.
 2. Configure settings by – aws configure
 3. It will ask for keys, to get keys you have to go to “my security credentials” in the dropdown menue of aws profile. 
 It will ask for default region also, go for what you will be adding in the ses.py file which we will be using to send the emails.
+
 Follow out this link for writing a file for sending emails:
 https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html
 with following changes + commenting the configurationSet variable.
---
+```
 SENDER = "Anshul Warade <warade.anshul@gmail.com>"
 RECIPIENT = "anshul@brightmoney.co"
 # Following region should be the same when you configured your credentials.
 AWS_REGION = "us-west-2"
---
-
+```
 3. Using the information above, create a library (seslib)
 Usage:
 	seslib.sendEmail(name, sender, recipient, subject, body_text)
