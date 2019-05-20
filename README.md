@@ -4,7 +4,9 @@ To send an email using the Amazon SES API, you can use the Query interface direc
 
 2. Setup for python
 Install the required package for python
-- pip install boto3
+```
+pip3 install boto3
+```
 
 Before moving to send email from sender to recipient, we need to first verify the emails.
 
@@ -29,4 +31,6 @@ AWS_REGION = "us-west-2"
 ```
 3. Using the information above, create a library (seslib)
 Usage:
-	seslib.sendEmail(name, sender, recipient, subject, body_text)
+```
+seslib.sendEmail(name, sender, recipient, subject, body_text)
+```
