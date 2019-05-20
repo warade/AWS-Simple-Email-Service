@@ -34,3 +34,6 @@ Usage:
 ```
 seslib.sendEmail(name, sender, recipient, subject, body_text)
 ```
+
+4. TemplatedEmails
+For simplicity we can use sendTemplatedEmail() function which uses templates which we define.
