@@ -13,6 +13,9 @@ Before moving to send email from sender to recipient, we need to first verify th
 How to verify emails?
 - Sign in to the AWS Management Console and open the Amazon SES console at https://console.aws.amazon.com/ses/.
 - In the console, use the region selector to choose the AWS Region where want to verify the email address.
+- In the navigation pane, under Identity Management, choose Email Addresses.
+
+
 
 After verifying emails you need to configure few things.
 1. Install cli of aws – pip install awscli
